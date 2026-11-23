@@ -18,7 +18,6 @@ import Companies from "./pages/Companies.jsx";
 import Persons from "./pages/Persons.jsx";
 import PersonTimeline from "./pages/PersonTimeline.jsx";
 import Documents from "./pages/Documents.jsx";
-import EventLog from "./pages/EventLog.jsx";
 
 // path pattern -> page. Order matters (specific before general).
 const ROUTES = [
@@ -36,7 +35,6 @@ const ROUTES = [
   ["/persons", Persons],
   ["/persons/:id", PersonTimeline],
   ["/documents", Documents],
-  ["/event-log", EventLog],
 ];
 
 const NAV = [
@@ -44,7 +42,6 @@ const NAV = [
   ["Admissions", [["/cycles", "Admission cycles"], ["/applications", "Applications"], ["/rejected", "Rejected applications", "rejected"], ["/documents", "Documents"]]],
   ["Students", [["/students", "Active students"], ["/events", "Events & attendance"]]],
   ["Alumni", [["/alumni", "Alumni & careers"], ["/companies", "Companies"]]],
-  ["System", [["/event-log", "Event log & replay"]]],
 ];
 
 export default function App() {
